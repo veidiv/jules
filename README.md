@@ -1,48 +1,54 @@
-# Guess the Animal AI Game
+# Catch the Falling Objects - Pygame Game
 
-Welcome to "Guess the Animal," a fun and interactive game where you try to guess an animal that the AI is thinking of!
+This is a simple and fun game built with Pygame where the player controls a paddle to catch falling objects.
 
 ## How to Play
 
-1.  The AI will secretly choose an animal.
-2.  You can ask the AI yes/no questions to figure out what the animal is (e.g., "Is it a mammal?", "Can it fly?").
-3.  The AI will answer your questions with "yes" or "no."
-4.  When you think you know the animal, type `guess` to make your guess.
-5.  Try to guess the animal in as few questions as possible!
-6.  Type `quit` at any time to end the game.
+1.  **Objective:** Catch as many falling objects as possible to score points.
+2.  **Controls:**
+    *   Use the **Left Arrow Key** to move the player paddle left.
+    *   Use the **Right Arrow Key** to move the player paddle right.
+3.  **Gameplay:**
+    *   Objects of different colors will fall from the top of the screen at varying speeds.
+    *   Maneuver your paddle to catch them before they reach the bottom.
+    *   Each object caught increases your score.
+    *   If an object is missed, it will reset and fall again from the top.
+
+## Requirements
+
+*   Python 3.x
+*   Pygame
 
 ## Setup and Installation
 
-1.  **Clone the repository (if you haven't already):**
+1.  **Ensure Python is installed.**
+
+2.  **Clone the repository (if applicable) or download the game files.**
     ```bash
     # git clone <repository_url>
     # cd <repository_directory>
     ```
 
-2.  **Create a virtual environment (recommended):**
+3.  **Create a virtual environment (recommended):**
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
 
-3.  **Install dependencies:**
-    The game requires Python and the `deepseek` library (though it currently uses a simulation mode if the API key is not provided).
+4.  **Install Pygame:**
+    The `requirements.txt` file lists Pygame. Install it using pip:
     ```bash
     pip install -r requirements.txt
     ```
+    (If you don't have `requirements.txt` yet, you can directly install Pygame: `pip install pygame`)
+
 
 ## Running the Game
 
-1.  **Set the API Key (Optional for Full AI Mode):**
-    To use the actual DeepSeek AI for responses, you need to set the `DEEPSEEK_API_KEY` environment variable.
+1.  Navigate to the directory where `visual_game.py` is located.
+2.  Run the game using Python:
     ```bash
-    export DEEPSEEK_API_KEY="your_actual_api_key_here"
-    ```
-    If this key is not set, the game will run in a simulation mode with pre-defined responses for some common questions.
-
-2.  **Run the game:**
-    ```bash
-    python game.py
+    python visual_game.py
     ```
 
 Enjoy playing!
